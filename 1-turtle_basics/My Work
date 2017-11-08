@@ -1,0 +1,49 @@
+import turtle
+
+window = turtle.Screen()
+t = turtle.Turtle()
+
+#speed up the program
+t.speed(9999)
+
+#draw square
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+
+#move away
+t.up()
+t.goto(-100, -0)
+t.down()
+
+#draw triangle
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.left(135)
+t.forward(141)
+
+#move away again
+t.up()
+t.goto(200, -0)
+t.down()
+t.right(45)
+
+#draw hexagon
+t.right(30)
+t.forward(100)
+t.right(60)
+t.forward(100)
+t.right(60)
+t.forward(100)
+t.right(60)
+t.forward(100)
+t.right(60)
+t.forward(100)
+t.right(60)
+t.forward(100)
+t.right(60)
