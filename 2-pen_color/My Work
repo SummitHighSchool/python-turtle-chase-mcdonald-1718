@@ -1,0 +1,23 @@
+from turtle import *
+
+#set speed
+speed(9999)
+
+#set location
+up()
+goto(200, 0)
+down()
+
+#set line color and width
+color(1, 1, 0)
+width(10)
+
+#loop to repeat the code
+for x in range(72):
+    #draw each ray and move
+    forward(50)
+    left(180)
+    forward(50)
+    left(85)
+    forward(20)
+    left(90)
