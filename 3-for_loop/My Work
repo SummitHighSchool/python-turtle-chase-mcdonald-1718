@@ -1,13 +1,16 @@
 from turtle import *
 
+#5 Horizontal Lines
 for y in range(0, 5):
     up()
     goto(-200, y * 100 - 200)
     down()
     forward(400)
 
+#Turn to begin vertical
 right(90)
 
+#5 vertical lines
 for x in range(0, 5):
     up()
     goto(x * 100 - 200, 200)
