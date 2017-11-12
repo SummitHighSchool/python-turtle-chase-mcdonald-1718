@@ -1,0 +1,10 @@
+from turtle import *
+
+#Ask Name
+Name = input('What is your name?')
+
+#Ask Food
+Food = input('What is your favorite food?')
+
+#Print statement
+print('Hello', Name,'! I like', Food, 'too!')
