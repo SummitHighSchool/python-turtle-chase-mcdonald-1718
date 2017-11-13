@@ -1,0 +1,21 @@
+from turtle import *
+from random import randint
+
+hideturtle()
+speed(9000)
+
+Shape = 'Circle'
+
+while (1 == 1):
+    Shape = input('Enter Circle or Square: ')
+    if Shape == 'Circle':
+        circle(50)
+    elif Shape == 'Square':
+        for _ in range(0, 4):
+            forward(100)
+            right(90)
+    else:
+        print('Thats not a valid shape, silly!')
+    up()
+    goto(randint(-300, 300), randint(-300, 300))
+    down()
