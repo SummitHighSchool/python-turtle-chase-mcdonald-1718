@@ -9,7 +9,8 @@ speed(100)
 Color38 = input('Enter a Color! ')
 Color18 = input('Enter another Color! ')
 Color26 = input('Enter another Color! ')
-Color24 = input('Enter one last Color! ')
+Color24 = input('Enter another Color! ')
+Color31 = input('Enter one last Color! ')
 
 #38
 #Setup
@@ -104,3 +105,19 @@ for _ in range(0, 3):
     left(120)
     forward(50)
     left(120)
+
+
+#31
+#Setup
+color(Color31)
+up()
+goto(0, 0)
+down()
+
+for _ in range(0, 4):
+    forward(120)
+    left(90)
+    forward(100)
+    left(90)
+    forward(80)
+    left(90)
