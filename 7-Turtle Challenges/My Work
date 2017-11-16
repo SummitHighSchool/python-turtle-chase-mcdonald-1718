@@ -1,0 +1,106 @@
+from turtle import *
+
+width(3)
+
+#Adjust speed to slow down.
+speed(100)
+
+#User generated Colors
+Color38 = input('Enter a Color! ')
+Color18 = input('Enter another Color! ')
+Color26 = input('Enter another Color! ')
+Color24 = input('Enter one last Color! ')
+
+#38
+#Setup
+color(Color38)
+up()
+goto(-300, -200)
+down()
+LoopNum = 0
+
+#Draw lines and turn less then 90 degrees to create a star.
+while LoopNum < 45:
+    forward(100)
+    right(88)
+    LoopNum += 1
+    
+
+#18
+#Setup
+color(Color18)
+up()
+goto(-300, 300)
+down()
+
+#Draw 4 U's to make the shape.
+for _ in range(0, 4):
+    forward(10)
+    right(90)
+    forward(100)
+    left(90)
+    forward(90)
+    left(90)
+    forward(100)
+    right(90)
+    forward(10)
+    right(90)
+    forward(110)
+    right(90)
+    forward(110)
+    right(90)
+    forward(110)
+    right(90)
+    up()
+    forward(220)
+    right(90)
+    down()
+
+
+#26
+#Setup
+color(Color26)
+up()
+goto(200, 200)
+down()
+
+#Draw 5 triangles to make the shape.
+for _ in range(0, 5):
+    forward(50)
+    right(120)
+    for _ in range(0, 2):
+        forward(100)
+        right(120)
+    forward(50)
+    right(72)
+
+
+
+#24
+#Setup
+color(Color24)
+up()
+goto(200, -300)
+down()
+
+#Draw 2 triangles.
+left(90)
+for _ in range(0, 2):
+    for _ in range(0, 3):
+        forward(150)
+        right(120)
+    forward(50)
+    left(60)
+    forward(50)
+    right(120)
+
+
+forward(50)
+right(60)
+
+#Draw 3 lines inside to make it look like many triangles.
+for _ in range(0, 3):
+    forward(100)
+    left(120)
+    forward(50)
+    left(120)
