@@ -3,14 +3,15 @@ from turtle import *
 width(3)
 
 #Adjust speed to slow down.
-speed(100)
+speed(0)
 
 #User generated Colors
 Color38 = input('Enter a Color! ')
 Color18 = input('Enter another Color! ')
 Color26 = input('Enter another Color! ')
 Color24 = input('Enter another Color! ')
-Color31 = input('Enter one last Color! ')
+Color31 = input('Enter another Color! ')
+Color40 = input('Enter one last Color! ')
 
 #38
 #Setup
@@ -31,7 +32,7 @@ while LoopNum < 45:
 #Setup
 color(Color18)
 up()
-goto(-300, 300)
+goto(-350, 350)
 down()
 
 #Draw 4 U's to make the shape.
@@ -62,7 +63,7 @@ for _ in range(0, 4):
 #Setup
 color(Color26)
 up()
-goto(200, 200)
+goto(300, 200)
 down()
 
 #Draw 5 triangles to make the shape.
@@ -111,7 +112,7 @@ for _ in range(0, 3):
 #Setup
 color(Color31)
 up()
-goto(0, 0)
+goto(-350, 0)
 down()
 
 for _ in range(0, 4):
@@ -120,4 +121,65 @@ for _ in range(0, 4):
     forward(100)
     left(90)
     forward(80)
+    left(90)
+
+
+#40
+#Setup
+speed(0)
+color(Color40)
+right(180)
+up()
+goto(-50, -50)
+down()
+
+for _ in range(0, 2):
+    for _ in range(0, 4):
+        forward(100)
+        right(90)
+    forward(51)
+    left(90)
+    up()
+    forward(24)
+    down()
+    right(135)
+up()
+goto(0, 0)
+down()
+
+for _ in range(0, 8):
+    forward(120)
+    right(180)
+    forward(120)
+    right(135)
+
+forward(120)
+right(90)
+backward(50)
+
+for _ in range(0, 8):
+    forward(100)
+    left(90)
+    forward(50)
+    left(90)
+    forward(100)
+    left(90)
+    forward(50)
+    left(135)
+    backward(100)
+
+left(90)
+forward(50)
+right(90)
+forward(50)
+left(45)
+
+for _ in range(0, 8):
+    forward(50)
+    right(90)
+    forward(50)
+    left(45)
+    forward(50)
+    right(90)
+    forward(50)
     left(90)
