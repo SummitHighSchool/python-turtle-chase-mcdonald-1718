@@ -126,13 +126,13 @@ for _ in range(0, 4):
 
 #40
 #Setup
-speed(0)
 color(Color40)
 right(180)
 up()
 goto(-50, -50)
 down()
 
+#draw 2 squares in the center
 for _ in range(0, 2):
     for _ in range(0, 4):
         forward(100)
@@ -147,6 +147,7 @@ up()
 goto(0, 0)
 down()
 
+#Draw lines going out from the squares
 for _ in range(0, 8):
     forward(120)
     right(180)
@@ -157,6 +158,7 @@ forward(120)
 right(90)
 backward(50)
 
+#Draw 8 rectangles on the outside
 for _ in range(0, 8):
     forward(100)
     left(90)
@@ -174,6 +176,7 @@ right(90)
 forward(50)
 left(45)
 
+#draw the outline of the shape
 for _ in range(0, 8):
     forward(50)
     right(90)
